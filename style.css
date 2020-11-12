@@ -135,6 +135,44 @@ a:hover{
     list-style-type: circle;
     font-family: sans-serif;
 }
+/* RATING STARS */
+.rating {
+    font-size: 0;
+    text-align: center;
+  }
+  
+  .rating span {
+      margin: 10px;
+    font-size: 40px;
+  }
+  
+  .rating span::before {
+    content: "☆";
+    color: black;
+  }
+  
+  .rating span.active::before {
+    content: "★";
+    color: orange;
+  }
+  
+  .rating span:hover {
+    cursor: pointer;
+  }
+  #bedømmelse{
+      border-color: #A9EBAF;
+      border-style: solid;
+      padding: 50px;
+      border-radius: 0;
+      margin: 10px;
+  }
+  .rate-btn{
+      border-style: none;
+      background-color: #3AA845;
+      border-radius: 2em;
+      padding: 10px;
+      margin: 5px;
+  }
 
 /*FOOTER*/
 .footer{
