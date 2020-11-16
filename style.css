@@ -26,6 +26,7 @@ p{
     background: white;
     margin-right: 40px;
     align-items: center;
+    display: none;
 
 }
 .menu-item{
