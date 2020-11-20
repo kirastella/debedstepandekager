@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 /*Typografi*/
 h1{
     font-family: 'Cabin', sans-serif;
@@ -19,15 +22,18 @@ p{
 }
 .menu-items{
     list-style: none;
-    right: 0;
-    transform-origin: top;
+    left: 0;
+    top: 0;
+    transform-origin: top left;
     transition: all 0.3s;
     z-index: 2;
     background: white;
     margin-right: 40px;
     align-items: center;
-    display: none;
-
+    /* display: none; */
+    transform: scale(0);
+    position: absolute;
+    width: 100%;
 }
 .menu-item{
     color:#3AA845;
@@ -213,10 +219,10 @@ a:hover{
     }
 
     .menu-items{
-        transform: scaleY(1);
         display: flex;
-        min-width: 400px;
+        max-width: 100%;
         justify-content: space-between;
+        position: static;
         
     }
     .wrapper{
