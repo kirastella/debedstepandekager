@@ -223,6 +223,7 @@ a:hover{
         max-width: 100%;
         justify-content: space-between;
         position: static;
+        transform: scale(1);
         
     }
     .wrapper{
